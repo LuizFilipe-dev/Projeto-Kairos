@@ -1,0 +1,197 @@
+/* ── KEYFRAMES ── */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeLeft {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.35; transform: scale(1.5); }
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.10; }
+  50%       { opacity: 0.20; }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes drawLine {
+  from { stroke-dashoffset: 100; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes borderPulse {
+  0%, 100% { border-color: rgba(34,197,94,0.18); }
+  50%       { border-color: rgba(34,197,94,0.45); }
+}
+
+@keyframes rotateIn {
+  from { opacity: 0; transform: rotate(-4deg) scale(0.96); }
+  to   { opacity: 1; transform: rotate(0deg) scale(1); }
+}
+
+/* ── HERO LOAD ANIMATIONS ── */
+
+.hero-anim {
+  animation: fadeUp 0.8s cubic-bezier(0.16,1,0.3,1) both;
+}
+.hero-anim-1 { animation-delay: 0ms; }
+.hero-anim-2 { animation-delay: 100ms; }
+.hero-anim-3 { animation-delay: 200ms; }
+.hero-anim-4 { animation-delay: 320ms; }
+.hero-anim-5 { animation-delay: 440ms; }
+.hero-anim-6 { animation-delay: 560ms; }
+
+/* ── SCROLL REVEAL ── */
+/* JS adiciona .visible quando entra na viewport */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16,1,0.3,1),
+    transform 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16,1,0.3,1),
+    transform 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16,1,0.3,1),
+    transform 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition:
+    opacity 0.6s cubic-bezier(0.16,1,0.3,1),
+    transform 0.6s cubic-bezier(0.16,1,0.3,1);
+}
+
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Delays escalonados para grupos */
+.d-100 { transition-delay: 100ms; }
+.d-200 { transition-delay: 200ms; }
+.d-300 { transition-delay: 300ms; }
+.d-400 { transition-delay: 400ms; }
+.d-500 { transition-delay: 500ms; }
+.d-600 { transition-delay: 600ms; }
+
+/* ── EFEITOS CONTÍNUOS ── */
+
+.pulse-dot {
+  animation: pulse 2.2s ease-in-out infinite;
+}
+
+.glow-anim {
+  animation: glow 5s ease-in-out infinite;
+}
+
+.float-anim {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+/* ── MICROINTERAÇÕES ── */
+
+.hover-lift {
+  transition: transform var(--t-base), box-shadow var(--t-base);
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-green);
+}
+
+.hover-glow {
+  transition: border-color var(--t-base), box-shadow var(--t-base);
+}
+.hover-glow:hover {
+  border-color: var(--border-green-md) !important;
+  box-shadow: 0 0 0 3px var(--green-glow-sm);
+}
+
+/* Step ativo no scroll */
+.step-item.active .step-num {
+  background: var(--green);
+  color: var(--bg);
+  border-color: var(--green);
+  box-shadow: 0 0 0 6px var(--green-glow-sm);
+}
+
+/* FAQ aberto */
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+  color: var(--green);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1),
+              padding 0.3s ease,
+              opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px;
+  opacity: 1;
+  padding-top: var(--s4);
+}
