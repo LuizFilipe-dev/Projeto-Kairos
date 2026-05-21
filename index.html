@@ -1,11 +1,1137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ── SEO ── -->
+  <title>Kairós | Assessoria em Licitações — Do edital ao contrato</title>
+  <meta name="description" content="A Kairós conecta sua empresa ao maior comprador do Brasil. Assessoria completa em licitações públicas — do cadastro ao contrato fechado. Diagnóstico gratuito.">
+  <meta name="keywords" content="assessoria licitações, licitação pública, pregão eletrônico, fornecedor governo, compras públicas, SICAF, licitação para pequenas empresas">
+  <meta name="author" content="Kairós Assessoria em Licitações">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kairoslicitacoes.com.br/">
+
+  <!-- ── OPEN GRAPH ── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://kairoslicitacoes.com.br/">
+  <meta property="og:title"       content="Kairós | Assessoria em Licitações">
+  <meta property="og:description" content="Sua empresa vendendo para o maior comprador do Brasil. Diagnóstico gratuito.">
+  <meta property="og:image"       content="assets/images/og-image.jpg">
+  <meta property="og:locale"      content="pt_BR">
+
+  <!-- ── TWITTER CARD ── -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Kairós | Assessoria em Licitações">
+  <meta name="twitter:description" content="Sua empresa vendendo para o maior comprador do Brasil.">
+  <meta name="twitter:image"       content="assets/images/og-image.jpg">
+
+  <!-- ── FAVICON ── -->
+  <link rel="icon"             type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon"   type="image/x-icon"  href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon"                       href="assets/images/apple-touch-icon.png">
+
+  <!-- ── FONTS PRECONNECT ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ── TABLER ICONS ── -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.19.0/webfont/tabler-icons.min.css">
+
+  <!-- ── CSS ── -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- ── SCHEMA.ORG — FAQ ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Minha empresa precisa ser grande para participar de licitações?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. A Lei Complementar 123 garante preferência legal para micro e pequenas empresas em licitações até R$ 80 mil e empate ficto nas demais. O tamanho não é impedimento — o preparo sim."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo leva para ganhar a primeira licitação?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Em média, empresas bem preparadas conseguem o primeiro contrato entre 30 e 90 dias após o cadastro. Depende do segmento, da frequência de editais e da estratégia adotada."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O pagamento do governo realmente é garantido?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. O empenho orçamentário compromete legalmente o valor antes da compra. Atrasos existem, mas a inadimplência é rara e o crédito pode ser cobrado judicialmente com alta eficácia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona a assessoria da Kairós?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cuidamos de todo o processo: diagnóstico inicial, cadastro no SICAF, monitoramento de editais, montagem de propostas, acompanhamento do pregão ao vivo e suporte pós-contrato até o recebimento."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qualquer tipo de empresa pode participar de licitações?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Praticamente sim. MEI, ME, EPP e empresas de médio porte podem participar. O governo compra desde materiais de escritório até equipamentos hospitalares, obras e serviços de TI."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ── SCHEMA.ORG — ORGANIZAÇÃO ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Kairós Assessoria em Licitações",
+    "description": "Assessoria especializada em licitações públicas para empresas de todos os segmentos.",
+    "url": "https://kairoslicitacoes.com.br",
+    "telephone": "+55-00-00000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/kairoslicitacoes"
+    ]
+  }
+  </script>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+
+  <!-- ============================================================
+       NAVEGAÇÃO
+  ============================================================ -->
+  <header>
+    <nav class="nav" id="nav" role="navigation" aria-label="Menu principal">
+
+      <a href="#hero" class="nav-logo" aria-label="Kairós — página inicial">
+        <div class="nav-logo-icon" aria-hidden="true">
+          <!-- Ícone placeholder — substitua pelo logo final -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <span class="nav-logo-text"><span>Z</span>kairós</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#solucao">Como funciona</a></li>
+        <li><a href="#para-quem">Para quem</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <a href="#formulario" class="btn btn-primary btn-md" style="margin-left:var(--s8)">
+        Diagnóstico gratuito
+      </a>
+
+      <button
+        class="nav-hamburger"
+        id="hamburger"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="nav-mobile"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+
+    <!-- Menu mobile -->
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+      <a href="#solucao"      onclick="closeMobileMenu()">Como funciona</a>
+      <a href="#para-quem"    onclick="closeMobileMenu()">Para quem</a>
+      <a href="#diferenciais" onclick="closeMobileMenu()">Diferenciais</a>
+      <a href="#faq"          onclick="closeMobileMenu()">FAQ</a>
+      <a href="#formulario"   onclick="closeMobileMenu()" class="nav-mobile-cta">
+        Diagnóstico gratuito →
+      </a>
+    </nav>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <main>
+    <section class="hero" id="hero" aria-label="Apresentação principal">
+
+      <!-- Fundo decorativo -->
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+      <div class="hero-grid"           aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-inner">
+
+          <div class="hero-badge hero-anim hero-anim-1">
+            <div class="hero-dot pulse-dot" aria-hidden="true"></div>
+            Assessoria especializada em licitações públicas
+          </div>
+
+          <h1 class="hero-h1 hero-anim hero-anim-2">
+            Sua empresa vendendo<br>
+            para o <em>maior comprador</em><br>
+            do Brasil
+          </h1>
+
+          <p class="hero-sub hero-anim hero-anim-3">
+            O governo gasta mais de R&nbsp;600 bilhões por ano em compras
+            públicas e não pede desconto, não some e paga garantido em lei.
+            A Kairós conecta sua empresa a esse mercado — do primeiro
+            cadastro ao contrato assinado.
+          </p>
+
+          <div class="hero-actions hero-anim hero-anim-4">
+            <a href="#formulario" class="btn btn-primary btn-lg">
+              Quero meu diagnóstico gratuito
+              <i class="ti ti-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#solucao" class="btn btn-outline btn-lg">
+              Como funciona
+            </a>
+          </div>
+
+          <div class="hero-stats hero-anim hero-anim-5" role="list" aria-label="Dados do mercado">
+            <div class="hero-stat" role="listitem">
+              <span class="hero-stat-value" data-target="600" data-suffix="bi+">0</span>
+              <span class="hero-stat-label">em compras governamentais/ano</span>
+            </div>
+            <div class="hero-stat" role="listitem">
+              <span class="hero-stat-value" data-target="65" data-suffix="%">0</span>
+              <span class="hero-stat-label">do mercado ainda inexplorado</span>
+            </div>
+            <div class="hero-stat" role="listitem">
+              <span class="hero-stat-value" data-target="45" data-suffix="mil+">0</span>
+              <span class="hero-stat-label">unidades públicas comprando</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Seta de scroll -->
+      <button class="hero-scroll" onclick="scrollToNext()" aria-label="Rolar para próxima seção">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </button>
+
+    </section>
+
+
+    <!-- ============================================================
+         NÚMEROS
+    ============================================================ -->
+    <div class="numbers-section" aria-label="Dados do mercado público">
+      <div class="container">
+        <div class="numbers-grid" role="list">
+
+          <div class="number-card reveal" role="listitem">
+            <span class="number-value" data-target="600" data-prefix="R$" data-suffix="bi">0</span>
+            <span class="number-label">em compras governamentais por ano</span>
+          </div>
+
+          <div class="number-card reveal d-100" role="listitem">
+            <span class="number-value" data-target="45" data-suffix="mil+">0</span>
+            <span class="number-label">unidades de saúde comprando no Brasil</span>
+          </div>
+
+          <div class="number-card reveal d-200" role="listitem">
+            <span class="number-value" data-target="65" data-suffix="%">0</span>
+            <span class="number-label">do mercado público ainda inexplorado</span>
+          </div>
+
+          <div class="number-card reveal d-300" role="listitem">
+            <span class="number-value" data-target="60" data-suffix=" meses">0</span>
+            <span class="number-label">duração máxima de contrato de serviços</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============================================================
+         PROBLEMA
+    ============================================================ -->
+    <section id="problema" aria-label="O problema do mercado privado">
+      <div class="container">
+
+        <span class="sec-label reveal">O problema</span>
+
+        <h2 class="sec-title reveal d-100">
+          Cansado de correr atrás de cliente<br>
+          <em>sem previsibilidade?</em>
+        </h2>
+
+        <p class="sec-sub reveal d-200">
+          Se você depende 100% do mercado privado, provavelmente
+          enfrenta pelo menos um desses cenários todo mês.
+        </p>
+
+        <div class="problem-grid" role="list">
+
+          <article class="problem-card reveal d-100" role="listitem">
+            <div class="problem-icon" aria-hidden="true">
+              <i class="ti ti-cash-off"></i>
+            </div>
+            <div>
+              <h3>Clientes que somem na hora de pagar</h3>
+              <p>
+                Boleto em aberto, promessa de pagar semana que vem,
+                inadimplência que corrói sua margem todo mês sem previsão.
+              </p>
+            </div>
+          </article>
+
+          <article class="problem-card reveal d-200" role="listitem">
+            <div class="problem-icon" aria-hidden="true">
+              <i class="ti ti-trending-down"></i>
+            </div>
+            <div>
+              <h3>Guerra de preço sem fim</h3>
+              <p>
+                Concorrência acirrada, margem cada vez mais espremida,
+                desconto como única estratégia para não perder a venda.
+              </p>
+            </div>
+          </article>
+
+          <article class="problem-card reveal d-300" role="listitem">
+            <div class="problem-icon" aria-hidden="true">
+              <i class="ti ti-calendar-off"></i>
+            </div>
+            <div>
+              <h3>Receita imprevisível todo mês</h3>
+              <p>
+                Começa do zero a cada mês, sem saber de onde vem o
+                próximo cliente ou quanto vai entrar no caixa.
+              </p>
+            </div>
+          </article>
+
+          <article class="problem-card reveal d-400" role="listitem">
+            <div class="problem-icon" aria-hidden="true">
+              <i class="ti ti-clock-x"></i>
+            </div>
+            <div>
+              <h3>Tempo todo gasto em prospecção</h3>
+              <p>
+                A operação absorve tudo e sobra pouco espaço para crescer,
+                inovar ou buscar novos mercados com mais estabilidade.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SOLUÇÃO
+    ============================================================ -->
+    <section id="solucao" style="background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)" aria-label="A solução — mercado público">
+      <div class="container">
+
+        <span class="sec-label reveal">A solução</span>
+
+        <h2 class="sec-title reveal d-100">
+          Um mercado que compra todos os dias<br>
+          <em>e paga garantido por lei</em>
+        </h2>
+
+        <p class="sec-sub reveal d-200">
+          O governo não pede desconto, não some e não cancela pedido.
+          Ele tem orçamento definido e é obrigado a comprar por licitação.
+        </p>
+
+        <div class="solution-wrap">
+
+          <!-- Lista de benefícios -->
+          <div class="solution-list" role="list">
+
+            <div class="solution-item reveal d-100" role="listitem">
+              <div class="solution-check" aria-hidden="true">
+                <i class="ti ti-check"></i>
+              </div>
+              <div>
+                <h3>Pagamento garantido em lei</h3>
+                <p>
+                  O empenho orçamentário compromete o valor antes de qualquer
+                  compra. O governo não pode gastar o que não tem empenhado —
+                  sua segurança está na legislação.
+                </p>
+              </div>
+            </div>
+
+            <div class="solution-item reveal d-200" role="listitem">
+              <div class="solution-check" aria-hidden="true">
+                <i class="ti ti-check"></i>
+              </div>
+              <div>
+                <h3>Demanda constante o ano inteiro</h3>
+                <p>
+                  Sem sazonalidade. Hospitais, escolas, prefeituras e
+                  universidades compram todo mês para manter suas operações
+                  funcionando independente da época do ano.
+                </p>
+              </div>
+            </div>
+
+            <div class="solution-item reveal d-300" role="listitem">
+              <div class="solution-check" aria-hidden="true">
+                <i class="ti ti-check"></i>
+              </div>
+              <div>
+                <h3>Contratos de longa duração</h3>
+                <p>
+                  Serviços chegam a 60 meses. Fornecimento de produtos pode
+                  ser anual e renovável. Imagine ter a receita dos próximos
+                  anos já comprometida.
+                </p>
+              </div>
+            </div>
+
+            <div class="solution-item reveal d-400" role="listitem">
+              <div class="solution-check" aria-hidden="true">
+                <i class="ti ti-check"></i>
+              </div>
+              <div>
+                <h3>Sem precisar de indicação para entrar</h3>
+                <p>
+                  Regras iguais para todos. Quem tem documentação correta
+                  e melhor proposta ganha — sem networking, sem favores,
+                  independente do tamanho da empresa.
+                </p>
+              </div>
+            </div>
+
+            <div class="solution-item reveal d-500" role="listitem">
+              <div class="solution-check" aria-hidden="true">
+                <i class="ti ti-check"></i>
+              </div>
+              <div>
+                <h3>Vantagem legal para pequenas empresas</h3>
+                <p>
+                  A Lei Complementar 123 garante preferência para ME e MEI
+                  em licitações até R&nbsp;80 mil e empate ficto nas demais.
+                  A lei foi feita para você.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Card de stat -->
+          <div class="solution-stat-card reveal-right">
+
+            <div class="stat-big-number" aria-label="R$ 600 bilhões">
+              R$&nbsp;600<span style="font-size:0.5em;opacity:.8">bi</span>
+            </div>
+
+            <p class="stat-big-label">
+              é o que o governo federal gasta em compras
+              e serviços <strong style="color:var(--white);font-weight:500">
+              por ano.</strong> E ainda há estados e municípios.
+            </p>
+
+            <div class="stat-mini-grid" role="list">
+              <div class="stat-mini" role="listitem">
+                <strong>+R$200bi</strong>
+                <span>Estados/ano</span>
+              </div>
+              <div class="stat-mini" role="listitem">
+                <strong>+R$150bi</strong>
+                <span>Municípios/ano</span>
+              </div>
+              <div class="stat-mini" role="listitem">
+                <strong>45mil+</strong>
+                <span>Unidades saúde</span>
+              </div>
+              <div class="stat-mini" role="listitem">
+                <strong>65%</strong>
+                <span>Inexplorado</span>
+              </div>
+            </div>
+
+            <a href="#formulario" class="btn btn-primary btn-md" style="width:100%;margin-top:var(--s6)">
+              Quero entrar nesse mercado
+              <i class="ti ti-arrow-right" aria-hidden="true"></i>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PARA QUEM
+    ============================================================ -->
+    <section class="audience-section" id="para-quem" aria-label="Para quem é a Kairós">
+      <div class="container">
+
+        <div class="text-center">
+          <span class="sec-label reveal">Para quem é</span>
+          <h2 class="sec-title reveal d-100">
+            Não importa onde sua empresa<br>
+            <em>está agora</em>
+          </h2>
+          <p class="sec-sub reveal d-200">
+            A Kairós atende empresas em diferentes momentos da jornada
+            com o mercado público — do zero ao crescimento.
+          </p>
+        </div>
+
+        <div class="audience-grid" role="list">
+
+          <article class="audience-card reveal d-100" role="listitem">
+            <div class="audience-icon" aria-hidden="true">
+              <i class="ti ti-search" style="font-size:22px;color:var(--green)"></i>
+            </div>
+            <h3>Nunca participou</h3>
+            <p>
+              Sua empresa nunca tentou uma licitação.
+              Te levamos do zero ao primeiro contrato com suporte
+              completo em cada etapa do processo.
+            </p>
+          </article>
+
+          <article class="audience-card reveal d-200" role="listitem">
+            <div class="audience-icon" aria-hidden="true">
+              <i class="ti ti-help-circle" style="font-size:22px;color:var(--green)"></i>
+            </div>
+            <h3>Conhece mas não tenta</h3>
+            <p>
+              Você sabe que existe mas acha complicado ou burocrático
+              demais. Simplificamos tudo e mostramos que é muito mais
+              acessível do que parece.
+            </p>
+          </article>
+
+          <article class="audience-card reveal d-300" role="listitem">
+            <div class="audience-icon" aria-hidden="true">
+              <i class="ti ti-trending-up" style="font-size:22px;color:var(--green)"></i>
+            </div>
+            <h3>Tenta mas não ganha</h3>
+            <p>
+              Você já participa mas os resultados não aparecem.
+              Identificamos o que está travando e ajustamos a
+              estratégia para começar a converter.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         COMO FUNCIONA
+    ============================================================ -->
+    <section id="como-funciona" aria-label="Como funciona a assessoria">
+      <div class="container">
+
+        <span class="sec-label reveal">Como funciona</span>
+        <h2 class="sec-title reveal d-100">
+          Do zero ao contrato em
+          <em>4 etapas</em>
+        </h2>
+
+        <div class="steps-wrap">
+
+          <!-- Steps -->
+          <div class="steps-list" id="steps-list" role="list">
+
+            <div class="step-item reveal" role="listitem" data-step="1">
+              <div class="step-num" aria-hidden="true">01</div>
+              <div class="step-content">
+                <h3>Diagnóstico da sua empresa</h3>
+                <p>
+                  Analisamos o perfil, produtos e serviços da sua empresa
+                  e mapeamos quais órgãos e licitações têm maior potencial
+                  para o seu segmento específico no mercado público.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item reveal d-100" role="listitem" data-step="2">
+              <div class="step-num" aria-hidden="true">02</div>
+              <div class="step-content">
+                <h3>Cadastro e habilitação</h3>
+                <p>
+                  Organizamos toda a documentação necessária, realizamos
+                  o cadastro no SICAF e garantimos que sua empresa esteja
+                  totalmente habilitada para participar de pregões eletrônicos.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item reveal d-200" role="listitem" data-step="3">
+              <div class="step-num" aria-hidden="true">03</div>
+              <div class="step-content">
+                <h3>Estratégia e execução</h3>
+                <p>
+                  Identificamos os editais certos, montamos propostas
+                  competitivas com precificação estratégica e acompanhamos
+                  cada pregão ao vivo tomando decisões em tempo real.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item reveal d-300" role="listitem" data-step="4">
+              <div class="step-num" aria-hidden="true">04</div>
+              <div class="step-content">
+                <h3>Contrato e recorrência</h3>
+                <p>
+                  Com o contrato em mãos, acompanhamos a execução, emissão
+                  de notas e recebimento. Construímos um histórico que abre
+                  portas para contratos maiores e renovações futuras.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Card lateral -->
+          <div class="steps-card reveal-right">
+            <h3>
+              Enquanto você foca no negócio,
+              <em>a Kairós opera no governo</em>
+            </h3>
+            <p>
+              Cuidamos de toda a parte técnica e burocrática para que
+              você não precise parar a operação para aprender licitação
+              do zero. Você vende, nós operamos.
+            </p>
+
+            <ul class="steps-card-list" role="list">
+              <li class="steps-card-item">Monitoramento diário de editais</li>
+              <li class="steps-card-item">Análise e seleção de oportunidades</li>
+              <li class="steps-card-item">Montagem completa de propostas</li>
+              <li class="steps-card-item">Acompanhamento do pregão ao vivo</li>
+              <li class="steps-card-item">Gestão de documentação e prazos</li>
+              <li class="steps-card-item">Suporte até o pagamento recebido</li>
+            </ul>
+
+            <a href="#formulario" class="btn btn-primary btn-md" style="width:100%">
+              Começar agora
+              <i class="ti ti-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         DIFERENCIAIS
+    ============================================================ -->
+    <section class="diff-section" id="diferenciais" aria-label="Diferenciais da Kairós">
+      <div class="container">
+
+        <div class="text-center">
+          <span class="sec-label reveal">Por que a Kairós</span>
+          <h2 class="sec-title reveal d-100">
+            Assessoria que cuida de
+            <em>tudo por você</em>
+          </h2>
+          <p class="sec-sub reveal d-200">
+            Não somos um curso. Somos a equipe que opera o mercado
+            público junto com sua empresa — do edital ao contrato.
+          </p>
+        </div>
+
+        <div class="diff-grid" role="list">
+
+          <article class="diff-card reveal d-100" role="listitem">
+            <div class="diff-icon" aria-hidden="true">
+              <i class="ti ti-target" style="font-size:20px;color:var(--green)"></i>
+            </div>
+            <h3>Mapeamento de editais</h3>
+            <p>
+              Monitoramos diariamente os portais de compras públicas e
+              filtramos as oportunidades com maior potencial para o
+              seu segmento específico.
+            </p>
+          </article>
+
+          <article class="diff-card reveal d-200" role="listitem">
+            <div class="diff-icon" aria-hidden="true">
+              <i class="ti ti-file-description" style="font-size:20px;color:var(--green)"></i>
+            </div>
+            <h3>Proposta técnica completa</h3>
+            <p>
+              Elaboramos propostas dentro das exigências do edital com
+              estratégia de precificação inteligente para maximizar as
+              chances de vitória.
+            </p>
+          </article>
+
+          <article class="diff-card reveal d-300" role="listitem">
+            <div class="diff-icon" aria-hidden="true">
+              <i class="ti ti-bolt" style="font-size:20px;color:var(--green)"></i>
+            </div>
+            <h3>Pregão ao vivo</h3>
+            <p>
+              Participamos dos pregões eletrônicos em tempo real,
+              tomando decisões estratégicas durante a sessão para
+              garantir a melhor posição competitiva.
+            </p>
+          </article>
+
+          <article class="diff-card reveal d-100" role="listitem">
+            <div class="diff-icon" aria-hidden="true">
+              <i class="ti ti-folder-check" style="font-size:20px;color:var(--green)"></i>
+            </div>
+            <h3>Gestão documental</h3>
+            <p>
+              Controlamos validade de certidões, habilitações e todos
+              os documentos necessários para manter sua empresa sempre
+              apta a participar.
+            </p>
+          </article>
+
+          <article class="diff-card reveal d-200" role="listitem">
+            <div class="diff-icon" aria-hidden="true">
+              <i class="ti ti-handshake" style="font-size:20px;color:var(--green)"></i>
+            </div>
+            <h3>Suporte pós-contrato</h3>
+            <p>
+              Acompanhamos a execução do contrato, emissão de notas
+              fiscais e todos os trâmites até o recebimento do
+              pagamento garantido.
+            </p>
+          </article>
+
+          <article class="diff-card reveal d-300" role="listitem">
+            <div class="diff-icon" aria-hidden="true">
+              <i class="ti ti-chart-bar" style="font-size:20px;color:var(--green)"></i>
+            </div>
+            <h3>Transparência total</h3>
+            <p>
+              Você acompanha tudo em tempo real — editais analisados,
+              pregões disputados, resultados alcançados e próximas
+              oportunidades mapeadas.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         BANNER CTA
+    ============================================================ -->
+    <div class="cta-banner" aria-label="Chamada para ação">
+      <div class="container">
+        <h2 class="reveal">
+          O governo não vai te ligar.<br>
+          Mas está comprando agora.
+        </h2>
+        <p class="reveal d-100">
+          Sua empresa pode ter uma fatia desse mercado ainda este mês.
+        </p>
+        <a href="#formulario" class="btn btn-primary btn-lg reveal d-200">
+          Quero meu diagnóstico gratuito
+          <i class="ti ti-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- ============================================================
+         FAQ
+    ============================================================ -->
+    <section id="faq" aria-label="Perguntas frequentes">
+      <div class="container">
+
+        <div class="text-center">
+          <span class="sec-label reveal">Dúvidas</span>
+          <h2 class="sec-title reveal d-100">Perguntas frequentes</h2>
+          <p class="sec-sub reveal d-200">
+            As questões que mais aparecem antes de começar.
+          </p>
+        </div>
+
+        <div class="faq-wrap reveal d-100" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <h3>Minha empresa precisa ser grande para participar de licitações?</h3>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                Não. A Lei Complementar 123 garante preferência legal para micro e
+                pequenas empresas em licitações até R&nbsp;80 mil e empate ficto nas
+                demais. O tamanho não é o impedimento — o preparo sim. Empresas MEI
+                participam e ganham contratos todos os dias.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <h3>Quanto tempo leva para ganhar a primeira licitação?</h3>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                Em média, empresas bem preparadas conquistam o primeiro contrato entre
+                30 e 90 dias após o cadastro. O prazo varia conforme o segmento, a
+                frequência de editais disponíveis e a estratégia adotada. Alguns nichos
+                têm editais toda semana.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <h3>O pagamento do governo realmente é garantido?</h3>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                Sim. O empenho orçamentário compromete legalmente o valor antes da compra.
+                Atrasos existem, mas a inadimplência é exceção rara e o crédito pode ser
+                cobrado judicialmente com alta eficácia. É muito mais seguro do que a maioria
+                dos clientes privados.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <h3>Como funciona a assessoria da Kairós na prática?</h3>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                Cuidamos de todo o processo: diagnóstico inicial do seu perfil, cadastro
+                no SICAF, monitoramento diário de editais, montagem completa de propostas,
+                acompanhamento do pregão ao vivo e suporte pós-contrato até o recebimento.
+                Você foca no seu negócio, nós operamos no governo.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <h3>Qualquer tipo de empresa pode participar de licitações?</h3>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                Praticamente sim. MEI, ME, EPP e empresas de médio porte podem participar.
+                O governo compra desde material de escritório até equipamentos hospitalares,
+                obras civis, serviços de TI, alimentação, limpeza e muito mais. Se sua empresa
+                vende algo, há uma licitação para isso.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         FORMULÁRIO
+    ============================================================ -->
+    <section class="form-section" id="formulario" aria-label="Formulário de diagnóstico gratuito">
+      <div class="container">
+        <div class="form-layout">
+
+          <!-- Copy -->
+          <div class="form-copy reveal-left">
+            <span class="sec-label">Diagnóstico gratuito</span>
+            <h2 class="sec-title">
+              Descubra se sua empresa está
+              <em>pronta para licitar</em>
+            </h2>
+            <p class="sec-sub" style="margin-bottom:var(--s8)">
+              Preencha o formulário e nossa equipe entra em contato
+              pelo WhatsApp em até 24h com uma análise personalizada
+              para o seu segmento.
+            </p>
+
+            <ul class="form-benefits" role="list">
+              <li class="form-benefit">Análise completa do perfil da sua empresa</li>
+              <li class="form-benefit">Mapeamento de oportunidades no seu nicho</li>
+              <li class="form-benefit">Orientação sobre os primeiros passos</li>
+              <li class="form-benefit">Sem compromisso — 100% gratuito</li>
+            </ul>
+          </div>
+
+          <!-- Formulário -->
+          <div class="form-card reveal-right">
+
+            <div id="form-content">
+              <div class="form-title">Quero meu diagnóstico gratuito</div>
+              <div class="form-subtitle">Nossa equipe entra em contato em até 24h pelo WhatsApp.</div>
+
+              <form id="lead-form" novalidate aria-label="Formulário de contato">
+
+                <div class="form-group">
+                  <label for="name">Nome completo</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Seu nome"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                  >
+                  <span class="error-msg" id="name-error" role="alert">
+                    Por favor, informe seu nome.
+                  </span>
+                </div>
+
+                <div class="form-group">
+                  <label for="whatsapp">WhatsApp</label>
+                  <input
+                    type="tel"
+                    id="whatsapp"
+                    name="whatsapp"
+                    placeholder="(00) 00000-0000"
+                    autocomplete="tel"
+                    required
+                    aria-required="true"
+                    maxlength="15"
+                  >
+                  <span class="error-msg" id="whatsapp-error" role="alert">
+                    Por favor, informe um WhatsApp válido.
+                  </span>
+                </div>
+
+                <div class="form-group">
+                  <label for="segment">Segmento da empresa</label>
+                  <select id="segment" name="segment" required aria-required="true">
+                    <option value="" disabled selected>Selecione seu segmento</option>
+                    <option value="eletronicos">Eletrônicos e tecnologia</option>
+                    <option value="saude">Saúde e odontológico</option>
+                    <option value="alimentacao">Alimentação e nutrição</option>
+                    <option value="servicos">Serviços e consultoria</option>
+                    <option value="construcao">Construção e reformas</option>
+                    <option value="moveis">Móveis e escritório</option>
+                    <option value="logistica">Logística e transporte</option>
+                    <option value="limpeza">Limpeza e conservação</option>
+                    <option value="outros">Outros</option>
+                  </select>
+                  <span class="error-msg" id="segment-error" role="alert">
+                    Por favor, selecione seu segmento.
+                  </span>
+                </div>
+
+                <div class="form-group">
+                  <label for="stage">Situação atual com licitações</label>
+                  <select id="stage" name="stage" required aria-required="true">
+                    <option value="" disabled selected>Selecione sua situação</option>
+                    <option value="nunca">Nunca participei</option>
+                    <option value="conhece">Conheço mas nunca tentei</option>
+                    <option value="tenta">Já participo mas não ganho</option>
+                    <option value="ganha">Já ganho e quero crescer</option>
+                  </select>
+                  <span class="error-msg" id="stage-error" role="alert">
+                    Por favor, selecione sua situação.
+                  </span>
+                </div>
+
+                <button
+                  type="submit"
+                  class="form-submit"
+                  id="form-btn"
+                  aria-label="Enviar formulário para diagnóstico gratuito"
+                >
+                  <span id="btn-text">Quero meu diagnóstico gratuito</span>
+                  <i class="ti ti-arrow-right" id="btn-icon" aria-hidden="true"></i>
+                </button>
+
+              </form>
+
+              <!-- LGPD obrigatório -->
+              <p class="form-disclaimer">
+                <i class="ti ti-lock" style="font-size:11px;margin-right:3px" aria-hidden="true"></i>
+                Seus dados são protegidos conforme a Lei 13.709/2018 (LGPD).
+                Não fazemos spam nem compartilhamos suas informações.
+              </p>
+            </div>
+
+            <!-- Estado de sucesso -->
+            <div class="form-success" id="form-success" aria-live="polite" aria-atomic="true">
+              <div class="form-success-icon" aria-hidden="true">
+                <i class="ti ti-check" style="color:var(--green)"></i>
+              </div>
+              <h3>Solicitação enviada!</h3>
+              <p>
+                Nossa equipe vai entrar em contato<br>
+                pelo WhatsApp em até 24h.<br><br>
+                <strong style="color:var(--green)">Fique de olho nas mensagens.</strong>
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <!-- Coluna 1 — Marca -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <span class="footer-logo-text"><span>Z</span>kairós</span>
+          </div>
+          <p class="footer-brand-desc">
+            Assessoria especializada em licitações públicas. Do cadastro ao
+            contrato fechado, com estratégia, execução e resultados.
+          </p>
+          <a
+            href="https://www.instagram.com/kairoslicitacoes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline btn-sm"
+            aria-label="Instagram da Kairós"
+          >
+            <i class="ti ti-brand-instagram" aria-hidden="true"></i>
+            @kairoslicitacoes
+          </a>
+        </div>
+
+        <!-- Coluna 2 — Navegação -->
+        <div>
+          <p class="footer-col-title">Navegação</p>
+          <ul class="footer-links" role="list">
+            <li><a href="#solucao">Como funciona</a></li>
+            <li><a href="#para-quem">Para quem é</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+            <li><a href="#formulario">Diagnóstico gratuito</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3 — Legal -->
+        <div>
+          <p class="footer-col-title">Legal</p>
+          <ul class="footer-links" role="list">
+            <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+            <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+            <li><a href="politica-privacidade.html#lgpd">LGPD</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4 — Contato -->
+        <div>
+          <p class="footer-col-title">Contato</p>
+          <ul class="footer-links" role="list">
+            <li>
+              <a
+                href="https://wa.me/5500000000000"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/kairoslicitacoes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2025 Kairós Assessoria em Licitações.
+          CNPJ: 00.000.000/0001-00 — Todos os direitos reservados.
+        </p>
+        <nav class="footer-legal" aria-label="Links legais">
+          <a href="politica-privacidade.html">Privacidade</a>
+          <a href="termos-de-uso.html">Termos</a>
+          <a href="politica-privacidade.html#lgpd">LGPD</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       WHATSAPP FLUTUANTE
+  ============================================================ -->
+  <div class="wa-float">
+    <span class="wa-tooltip">Fale pelo WhatsApp</span>
+    <a
+      class="wa-btn"
+      id="wa-btn"
+      href="https://wa.me/5500000000000?text=Olá!%20Vim%20pelo%20site%20da%20Kairós%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20assessoria%20em%20licitações."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Fale conosco pelo WhatsApp"
+    >
+      <!-- Ícone WhatsApp SVG -->
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form.js"></script>
+
 </body>
 </html>
