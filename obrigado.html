@@ -1,11 +1,249 @@
 <!DOCTYPE html>
-<html lang="BT-BR">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitação enviada | Kairós Assessoria em Licitações</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.19.0/webfont/tabler-icons.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .obrigado-wrap {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--s8);
+      position: relative;
+      overflow: hidden;
+    }
+ 
+    .obrigado-orb {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(34,197,94,0.10) 0%, transparent 65%);
+      pointer-events: none;
+      animation: glow 5s ease-in-out infinite;
+    }
+ 
+    .obrigado-card {
+      position: relative;
+      z-index: 1;
+      background: rgba(6,14,9,0.8);
+      border: 1px solid var(--border-green);
+      border-radius: var(--r-2xl);
+      padding: var(--s16) var(--s12);
+      text-align: center;
+      max-width: 520px;
+      width: 100%;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      animation: fadeUp 0.7s cubic-bezier(0.16,1,0.3,1) both;
+    }
+ 
+    .obrigado-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgba(34,197,94,0.1);
+      border: 1px solid var(--border-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--s6);
+      font-size: 36px;
+      color: var(--green);
+      animation: scaleIn 0.5s 0.3s cubic-bezier(0.34,1.56,0.64,1) both;
+    }
+ 
+    .obrigado-card h1 {
+      font-family: var(--font-display);
+      font-size: var(--text-3xl);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: var(--s3);
+      line-height: 1.1;
+    }
+ 
+    .obrigado-card h1 em {
+      font-style: normal;
+      color: var(--green);
+    }
+ 
+    .obrigado-card p {
+      font-size: var(--text-base);
+      color: var(--gray-300);
+      line-height: 1.7;
+      font-weight: 300;
+      margin-bottom: var(--s10);
+    }
+ 
+    .obrigado-steps {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s3);
+      margin-bottom: var(--s10);
+      text-align: left;
+    }
+ 
+    .obrigado-step {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--s4);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: var(--s4);
+    }
+ 
+    .obrigado-step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--green-darker);
+      border: 1px solid var(--border-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: var(--text-xs);
+      font-weight: 800;
+      color: var(--green);
+      flex-shrink: 0;
+    }
+ 
+    .obrigado-step p {
+      font-size: var(--text-sm);
+      color: var(--gray-300);
+      margin: 0;
+      line-height: 1.5;
+    }
+ 
+    .obrigado-step p strong {
+      color: var(--white);
+      font-weight: 500;
+      display: block;
+      margin-bottom: 2px;
+    }
+ 
+    .obrigado-actions {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s3);
+    }
+ 
+    .obrigado-timer {
+      font-size: var(--text-xs);
+      color: var(--gray-500);
+      margin-top: var(--s4);
+    }
+ 
+    .obrigado-timer span {
+      color: var(--green);
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-    
+ 
+  <!-- Nav mínima -->
+  <nav class="nav scrolled" role="navigation" aria-label="Navegação">
+    <a href="index.html" class="nav-logo" aria-label="Voltar para o início">
+      <div class="nav-logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <span class="nav-logo-text"><span>Z</span>kairós</span>
+    </a>
+  </nav>
+ 
+  <main class="obrigado-wrap">
+    <div class="obrigado-orb" aria-hidden="true"></div>
+ 
+    <div class="obrigado-card">
+ 
+      <div class="obrigado-icon" aria-hidden="true">
+        <i class="ti ti-check"></i>
+      </div>
+ 
+      <h1>Solicitação <em>enviada!</em></h1>
+ 
+      <p>
+        Nossa equipe recebeu sua solicitação e entrará em contato
+        pelo WhatsApp em até <strong style="color:var(--white);font-weight:500">24 horas.</strong>
+        Fique de olho nas mensagens.
+      </p>
+ 
+      <div class="obrigado-steps" aria-label="Próximos passos">
+        <div class="obrigado-step">
+          <div class="obrigado-step-num">1</div>
+          <p>
+            <strong>Aguarde o contato</strong>
+            Nossa equipe vai analisar seu perfil e entrar em contato pelo WhatsApp.
+          </p>
+        </div>
+        <div class="obrigado-step">
+          <div class="obrigado-step-num">2</div>
+          <p>
+            <strong>Diagnóstico personalizado</strong>
+            Vamos mapear as melhores oportunidades para o seu segmento.
+          </p>
+        </div>
+        <div class="obrigado-step">
+          <div class="obrigado-step-num">3</div>
+          <p>
+            <strong>Primeiro contrato</strong>
+            Com a estratégia certa, sua empresa começa a vender para o governo.
+          </p>
+        </div>
+      </div>
+ 
+      <div class="obrigado-actions">
+        <a
+          href="https://www.instagram.com/kairoslicitacoes"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline btn-md"
+          style="width:100%;justify-content:center"
+        >
+          <i class="ti ti-brand-instagram" aria-hidden="true"></i>
+          Acompanhe o Instagram enquanto isso
+        </a>
+        <a href="index.html" class="btn btn-ghost btn-md" style="justify-content:center">
+          Voltar para o site
+          <i class="ti ti-arrow-left" aria-hidden="true"></i>
+        </a>
+      </div>
+ 
+      <p class="obrigado-timer" id="redirect-timer">
+        Redirecionando em <span id="countdown">10</span>s
+      </p>
+ 
+    </div>
+  </main>
+ 
+  <script>
+    // Contagem regressiva e redirecionamento automático
+    let seconds = 10;
+    const countdown = document.getElementById('countdown');
+ 
+    const timer = setInterval(() => {
+      seconds--;
+      countdown.textContent = seconds;
+ 
+      if (seconds <= 0) {
+        clearInterval(timer);
+        window.location.href = 'index.html';
+      }
+    }, 1000);
+  </script>
+ 
 </body>
 </html>
